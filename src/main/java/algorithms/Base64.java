@@ -2,24 +2,13 @@ package algorithms;
 
 import org.apache.commons.codec.binary.StringUtils;
 
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 public class Base64 {
-
-    public static void main(String[] args) {
-//        String st = "agte6352hs";
-//        System.out.println("original string "+st);
-//
-//        String encoded = encode(st);
-//        System.out.println("after encoded "+encoded);
-//
-//        System.out.println("after decoded "+ decode(encoded));
-
-        double high = 99.99864196777344;
-        double low = 49.99864196777344;
-        double m = 55.0035682;
-
-        System.out.println(low > m ? "match" : "no match");
-    }
-
     private static final java.util.Base64.Encoder base64Encoder = java.util.Base64.getEncoder();
     private static final java.util.Base64.Decoder base64Decoder = java.util.Base64.getDecoder();
 
